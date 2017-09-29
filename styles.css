@@ -63,7 +63,7 @@ body .parallax-window {
 }
 .nav .nav-box ul {
   float: right;
-  line-height: 40px;
+  line-height: 60px;
 }
 .nav .nav-box ul li {
   float: right;
@@ -75,7 +75,6 @@ body .parallax-window {
   line-height: 100%;
   color: white;
   font-family: 'Russo One', sans-serif;
-  vertical-align: bottom;
 }
 .nav .nav-box ul span {
   display: inline-block;
@@ -229,7 +228,7 @@ body .parallax-window {
   font-size: 1.25em;
   display: scroll;
   position: fixed;
-  bottom: 40px;
+  bottom: 60px;
   right: 40px;
 }
 .contacto .contacto_box2 h2 {

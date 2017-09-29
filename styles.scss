@@ -72,17 +72,17 @@ body{
     ul{
       float:right;
       // padding-top: 10px;
-      line-height: 40px;
+      line-height: 60px;
       li{
         float: right;
         padding-left: 15px;
         a{
           text-decoration: none;
           font-size: 20px;
+          // line-height: 40px;
           line-height: 100%;
           color: white;
           font-family: 'Russo One', sans-serif;
-          vertical-align: bottom;
         }
       }
 
@@ -358,7 +358,7 @@ body{
       font-size: 1.25em;
       display:scroll;
       position:fixed;
-      bottom:40px;
+      bottom:60px;
       right:40px;
     }
 
