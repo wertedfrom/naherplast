@@ -1,3 +1,12 @@
+.texto {
+  max-width: 80%;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: justify;
+  color: white;
+}
+
 h2 {
   font-family: 'Russo One', sans-serif;
   font-size: 22px;
@@ -8,10 +17,10 @@ h2 {
 body {
   margin: 0;
   padding: 0;
+  min-width: 960px;
 }
 body .image {
   width: 100%;
-  margin-bottom: 10px;
 }
 body .parallax-window {
   min-height: 440px;
@@ -27,12 +36,14 @@ body .parallax-window {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  padding: 10px 20px 0px 20px;
+  min-width: 960px;
   z-index: 1;
+  height: 60px;
 }
 .nav .nav-box {
-  min-width: 90%;
-  padding: 0 5%;
+  width: 80%;
+  padding: 0 10%;
+  line-height: 60px;
 }
 .nav .nav-box .logo1 {
   color: navy;
@@ -52,96 +63,119 @@ body .parallax-window {
 }
 .nav .nav-box ul {
   float: right;
-  margin-right: 40px;
+  line-height: 40px;
 }
 .nav .nav-box ul li {
   float: right;
-  padding: 10px;
-  vertical-align: bottom;
+  padding-left: 15px;
 }
 .nav .nav-box ul li a {
   text-decoration: none;
   font-size: 20px;
+  line-height: 100%;
   color: white;
   font-family: 'Russo One', sans-serif;
   vertical-align: bottom;
 }
+.nav .nav-box ul span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 
 .presentation {
   max-width: 80%;
-  align-self: center;
-  padding: 0 10%;
-  z-index: -3;
+  padding: 30px 10%;
 }
 .presentation .presentation_left {
-  max-width: 60%;
+  width: 60%;
   float: left;
 }
 .presentation .presentation_right {
-  max-width: 40%;
+  width: 40%;
   float: left;
+  text-align: right;
 }
 .presentation .presentation_img {
-  margin-top: 60px;
   max-width: 100%;
-  border: 5px solid white;
-  border-radius: 25px;
+  border: 3px solid white;
+  border-radius: 3px;
 }
 .presentation .serv_img {
-  margin-top: 30px;
   max-width: 100%;
-  border: 5px solid white;
-  border-radius: 25px;
+  border: 3px solid white;
+  border-radius: 3px;
 }
 .presentation .products {
   max-width: 100%;
-  margin-top: 30px;
   z-index: -1;
 }
 .presentation .products .img_prod {
   margin-bottom: 10px;
   margin-left: 5px;
   max-width: 30%;
-  border: 2px solid white;
-  border-radius: 25px;
-  filter: brightness(85%);
+  float: left;
+  overflow: visible;
+  margin: 5px;
+  z-index: 0;
 }
-.presentation .products .img_prod:hover {
+.presentation .products .img_prod img {
+  -webkit-transition: all .3s ease;
+  /* Safari y Chrome */
+  -moz-transition: all .3s ease;
+  /* Firefox */
+  -o-transition: all .3s ease;
+  /* IE 9 */
+  -ms-transition: all .3s ease;
+  /* Opera */
+  max-width: 100%;
+  filter: brightness(90%);
+  border: 2px solid lightgray;
+}
+.presentation .products .img_prod:hover img {
   filter: brightness(100%);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 1;
 }
 .presentation .texto1 {
-  margin-top: 60px;
   max-width: 80%;
-  font-family: 'Russo One', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
   text-align: justify;
   color: white;
 }
 .presentation .texto2 {
-  margin-top: 20px;
   max-width: 100%;
   padding-left: 10%;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
   line-height: 25px;
-  color: white;
+  text-align: left;
+  color: Tomato;
 }
 .presentation .texto2 h2 {
   font-size: 22px;
+  color: Tomato;
 }
 .presentation .texto2 ul {
   list-style: circle;
 }
 .presentation .texto2 ul li {
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .presentation .texto2 ul .ul2 {
   list-style: square;
 }
 .presentation .texto3 {
-  margin-top: 30px;
   max-width: 80%;
   font-family: 'Russo One', sans-serif;
   font-size: 18px;
@@ -159,6 +193,12 @@ body .parallax-window {
 .contacto h2 {
   text-align: center;
   margin-bottom: 40px;
+}
+.contacto a:link, .contacto :visited {
+  color: white;
+}
+.contacto a:hover {
+  color: lightgray;
 }
 .contacto .contacto_box2 {
   max-width: 80%;
@@ -182,6 +222,15 @@ body .parallax-window {
   font-size: 18px;
   line-height: 30px;
   color: white;
+}
+.contacto .contacto_box2 .up {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.25em;
+  display: scroll;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 .contacto .contacto_box2 h2 {
   font-size: 22px;
