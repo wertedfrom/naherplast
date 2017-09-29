@@ -229,8 +229,8 @@ body .parallax-window {
   font-size: 1.25em;
   display: scroll;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
 }
 .contacto .contacto_box2 h2 {
   font-size: 22px;
